@@ -11,10 +11,10 @@ const produtos = {
     { nome: "Pepsi Twist 2L", preco: 10.49, img: "https://static.paodeacucar.com/img/uploads/1/576/32844576.jpg", quantidade: "2L" },
     { nome: "Schin 2L", preco: 9.99, img: "https://www.sondadelivery.com.br/img.aspx/sku/85880/530/85880.jpg", quantidade: "2L" },
     { nome: "Coca-Cola Zero 2L", preco: 13.99, img: "https://andinacocacola.vtexassets.com/arquivos/ids/158596-1600-auto?v=638703090705600000&width=1600&height=auto&aspect=true", quantidade: "2L" },
-    { nome: "Fanta Laranja 2L", preco: 8.79, img: "https://picsum.photos/seed/FantaLaranja/400", quantidade: "2L" },
-    { nome: "Sukita Laranja 2L", preco: 8.49, img: "https://picsum.photos/seed/SukitaLaranja/400", quantidade: "2L" },
-    { nome: "Coca-Cola Diet 1.5L", preco: 9.50, img: "https://picsum.photos/seed/CocaDiet1.5/400", quantidade: "1.5L" },
-    { nome: "Água com Gás 500ml", preco: 5.00, img: "https://picsum.photos/seed/AguaComGas/400", quantidade: "500ml" }
+    { nome: "Fanta Laranja 2L", preco: 8.79, img: "https://imgs.extra.com.br/1506139607/1xg.jpg?imwidth=500", quantidade: "2L" },
+    { nome: "Sukita Laranja 2L", preco: 8.49, img: "https://www.imigrantesbebidas.com.br/img/bebida/images/products/full/1880-refrigerante-sukita-laranja-pet-2l.20230901121149.png?s=a28929f3bee71a32e54a55c883fb6f07", quantidade: "2L" },
+    { nome: "Coca-Cola Diet 1.5L", preco: 9.50, img: "https://static.paodeacucar.com/img/uploads/1/37/28314037.png", quantidade: "1.5L" },
+    { nome: "ÁGUA CRYSTAL 500Ml", preco: 3.00, img: "https://images.tcdn.com.br/img/img_prod/858764/agua_crystal_500ml_gas_c_12_127_1_a126e0b536ba991756801f870daaff60.jpg", quantidade: "500ml" }
   ],
   matinais: [
     { nome: "Leite Integral 1L", preco: 6.50, img: "https://picsum.photos/seed/LeiteIntegral/400", quantidade: "1L" },
