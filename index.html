@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Mais</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Super Mais</h1>
+  </header>
+
+  <nav>
+    <a href="#bebidas" onclick="showSection('bebidas')">Bebidas</a>
+    <a href="#matinais" onclick="showSection('matinais')">Matinais</a>
+    <a href="#mercearia" onclick="showSection('mercearia')">Mercearia</a>
+    <a href="#hortifrute" onclick="showSection('hortifrute')">Hortifrute</a>
+    <a href="#acougue" onclick="showSection('acougue')">Açougue</a>
+    <a href="#congelados" onclick="showSection('congelados')">Congelados</a>
+    <a href="#padaria" onclick="showSection('padaria')">Padaria</a>
+    <a href="#limpeza" onclick="showSection('limpeza')">Limpeza</a>
+  </nav>
+
+  <section id="produtos">
+    <h2>Produtos</h2>
+    <div id="product-list"></div>
+  </section>
+
+  <section id="cart">
+    <h2>Carrinho de Compras</h2>
+    <div id="cart-items"></div>
+    <div id="total-price">
+      <h3>Total: R$ <span id="total">0,00</span></h3>
+    </div>
+    <button id="checkout" disabled>Finalizar Compra</button>
+    <button id="pagamento" style="display:none;">Realizar Pagamento</button>
+  </section>
+
+  <!-- Modal de pagamento -->
+  <div id="modalPagamento" class="modal">
+    <div class="modal-content">
+      <h2>Pagamento</h2>
+      <p>Insira os dados do seu cartão:</p>
+      <input type="text" placeholder="Número do Cartão">
+      <input type="text" placeholder="Validade (MM/AA)">
+      <input type="number" placeholder="CVV">
+      <button onclick="realizarPagamento()">Pagar</button>
+      <button onclick="fecharModal()">Cancelar</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Super Mais. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
