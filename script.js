@@ -222,4 +222,55 @@ const produtos = {
   document.addEventListener("DOMContentLoaded", () => {
     showSection("bebidas");
   });
+const searchBar = document.getElementById("search");
+const suggestionsBox = document.getElementById("suggestions");
+
+searchBar.addEventListener("input", searchProducts);
+
+function searchProducts() {
+    const query = searchBar.value.toLowerCase();
+    const suggestions = [];
+    
+    if (query.length > 0) {
+        for (const category in produtos) {
+            produtos[category].forEach(product => {
+                if (product.nome.toLowerCase().includes(query)) {
+                    suggestions.push(product);
+                }
+            });
+        }
+    }
+    updateSuggestions(suggestions);
+}
+
+function updateSuggestions(suggestions) {
+    suggestionsBox.innerHTML = "";
+    if (suggestions.length === 0) {
+        suggestionsBox.style.display = "none";
+        return;
+    }
+    
+    suggestions.forEach(product => {
+        const suggestionItem = document.createElement("div");
+        suggestionItem.textContent = product.nome;
+        suggestionItem.classList.add("suggestion-item");
+        suggestionItem.addEventListener("click", () => {
+            showSection(findProductCategory(product.nome));
+            searchBar.value = "";
+            suggestionsBox.style.display = "none";
+        });
+        suggestionsBox.appendChild(suggestionItem);
+    });
+    
+    suggestionsBox.style.display = "block";
+}
+
+function findProductCategory(productName) {
+    for (const category in produtos) {
+        if (produtos[category].some(p => p.nome === productName)) {
+            return category;
+        }
+    }
+    return "bebidas";
+}
   
