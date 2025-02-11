@@ -273,4 +273,47 @@ function findProductCategory(productName) {
     }
     return "bebidas";
 }
+  function updateSuggestions(suggestions) {
+  suggestionsBox.innerHTML = "";
+  if (suggestions.length === 0) {
+      suggestionsBox.style.display = "none";
+      return;
+  }
   
+  suggestions.forEach(product => {
+      const suggestionItem = document.createElement("div");
+      suggestionItem.classList.add("suggestion-item");
+      
+      const img = document.createElement("img");
+      img.src = product.img;
+      img.alt = product.nome;
+      
+      const text = document.createElement("span");
+      text.textContent = product.nome;
+      
+      suggestionItem.appendChild(img);
+      suggestionItem.appendChild(text);
+      
+      suggestionItem.addEventListener("click", () => {
+          const category = findProductCategory(product.nome);
+          showSection(category);
+          scrollToProduct(product.nome);
+          searchBar.value = "";
+          suggestionsBox.style.display = "none";
+      });
+      
+      suggestionsBox.appendChild(suggestionItem);
+  });
+  
+  suggestionsBox.style.display = "block";
+}
+
+function scrollToProduct(productName) {
+  const products = document.querySelectorAll(".product h3");
+  products.forEach(product => {
+      if (product.textContent === productName) {
+          product.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+  });
+}
+
