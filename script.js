@@ -76,10 +76,10 @@ Requeijão Cremoso Tradicional VIGOR Copo 200g", preco: 7.80, img: "https://stat
     { nome: "Batata 1kg", preco: 9.99, img: "https://ceagesp.gov.br/wp-content/uploads/2016/10/batataportal-600x469.jpg", quantidade: "5kg" }
   ],
   acougue: [
-    { nome: "Bife de Contra Filé 500g", preco: 39.99, img: "https://picsum.photos/seed/ContraFile500/400", quantidade: "500g" },
-    { nome: "Carne Moída 500g", preco: 29.99, img: "https://picsum.photos/seed/CarneMoida500/400", quantidade: "500g" },
-    { nome: "Costela 1kg", preco: 49.99, img: "https://picsum.photos/seed/Costela1kg/400", quantidade: "1kg" },
-    { nome: "Frango Inteiro 1.5kg", preco: 19.99, img: "https://picsum.photos/seed/FrangoInteiro1.5/400", quantidade: "1.5kg" },
+    { nome: "Bife de Contra Filé 500g", preco: 39.99, img: "", quantidade: "500g" },
+    { nome: "Carne Moída 500g", preco: 29.99, img: "", quantidade: "500g" },
+    { nome: "Costela 1kg", preco: 49.99, img: "", quantidade: "1kg" },
+    { nome: "Frango Inteiro 1.5kg", preco: 19.99, img: "", quantidade: "1.5kg" },
     { nome: "Filé de Frango 500g", preco: 24.99, img: "https://picsum.photos/seed/FileFrango500/400", quantidade: "500g" },
     { nome: "Picanha 1kg", preco: 69.99, img: "https://picsum.photos/seed/Picanha1kg/400", quantidade: "1kg" },
     { nome: "Linguiça 500g", preco: 19.99, img: "https://picsum.photos/seed/Linguica500/400", quantidade: "500g" },
