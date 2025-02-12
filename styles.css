@@ -4,7 +4,58 @@
     margin: 0;
     padding: 0;
   }
-  
+  /* Ajustes para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    #produtos {
+        text-align: center;
+    }
+
+    #product-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 90%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .product img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #cart {
+        text-align: center;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cart-item button {
+        margin-top: 5px;
+    }
+}
+
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
