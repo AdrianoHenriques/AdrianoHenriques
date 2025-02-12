@@ -36,6 +36,17 @@
         </div>
         <button id="checkout" disabled>Finalizar Compra</button>
         <button id="pagamento" style="display:none;">Realizar Pagamento</button>
+    <div id="modalPagamento" class="modal">
+    <div class="modal-content">
+        <h2>Finalizar Pagamento</h2>
+        <input type="text" id="nomeCartao" placeholder="Nome no cartão">
+        <input type="number" id="numeroCartao" placeholder="Número do cartão">
+        <input type="number" id="cvvCartao" placeholder="CVV">
+        <button onclick="realizarPagamento()">Pagar</button>
+        <button onclick="fecharModal()">Cancelar</button>
+    </div>
+</div>`;
+
     </section>
     <footer>
         <p>&copy; 2025 Super Mais. Todos os direitos reservados.</p>
