@@ -165,39 +165,49 @@ const produtos = {
     } else {
       carrinho.push({ nome, preco, quantidade: 1 });
     }
+  let carrinho = [];
+
+function addToCart(nome, preco) {
+    const produtoCarrinho = carrinho.find(item => item.nome === nome);
+    if (produtoCarrinho) {
+        produtoCarrinho.quantidade += 1;
+    } else {
+        carrinho.push({ nome, preco, quantidade: 1 });
+    }
     updateCart();
-  }
-  
-  function updateCart() {
+}
+
+function updateCart() {
     const cartItems = document.getElementById("cart-items");
     cartItems.innerHTML = "";
     let totalPreco = 0;
     carrinho.forEach(item => {
-      const cartItemDiv = document.createElement("div");
-      cartItemDiv.classList.add("cart-item");
-      cartItemDiv.innerHTML = `
-        <span>${item.nome} (x${item.quantidade})</span>
-        <strong>R$ ${(item.preco * item.quantidade).toFixed(2)}</strong>
-        <button onclick="removeFromCart('${item.nome}')">Remover</button>
-      `;
-      cartItems.appendChild(cartItemDiv);
-      totalPreco += item.preco * item.quantidade;
+        const cartItemDiv = document.createElement("div");
+        cartItemDiv.classList.add("cart-item");
+        cartItemDiv.innerHTML = `
+            <span>${item.nome} (x${item.quantidade})</span>
+            <button onclick="changeQuantity('${item.nome}', -1)">-</button>
+            <button onclick="changeQuantity('${item.nome}', 1)">+</button>
+            <strong>R$ ${(item.preco * item.quantidade).toFixed(2)}</strong>
+        `;
+        cartItems.appendChild(cartItemDiv);
+        totalPreco += item.preco * item.quantidade;
     });
     document.getElementById("total").textContent = totalPreco.toFixed(2);
     document.getElementById("checkout").disabled = carrinho.length === 0;
     document.getElementById("pagamento").style.display = carrinho.length > 0 ? "block" : "none";
-  }
-  
-  function removeFromCart(nome) {
-    carrinho = carrinho.filter(item => item.nome !== nome);
-    updateCart();
-  }
-  
-  document.getElementById("checkout").addEventListener("click", () => {
-    if (carrinho.length > 0) {
-      alert("Carrinho finalizado! Agora prossiga para o pagamento.");
+}
+
+function changeQuantity(nome, amount) {
+    const produtoCarrinho = carrinho.find(item => item.nome === nome);
+    if (produtoCarrinho) {
+        produtoCarrinho.quantidade += amount;
+        if (produtoCarrinho.quantidade <= 0) {
+            carrinho = carrinho.filter(item => item.nome !== nome);
+        }
     }
-  });
+}
+
   
   document.getElementById("pagamento").addEventListener("click", () => {
     document.getElementById("modalPagamento").style.display = "flex";
