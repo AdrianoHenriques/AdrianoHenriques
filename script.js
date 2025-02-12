@@ -144,83 +144,94 @@ const produtos = {
   ]
 };
 
+// script.js atualizado
 let carrinho = [];
 
 function showSection(sectionId) {
-  const productList = document.getElementById("product-list");
-  productList.innerHTML = "";
-  produtos[sectionId].forEach(product => {
-    const productDiv = document.createElement("div");
-    productDiv.classList.add("product");
-    productDiv.innerHTML = `
-      <img src="${product.img}" alt="${product.nome}">
-      <h3>${product.nome}</h3>
-      <p>${product.quantidade}</p>
-      <p>R$ ${product.preco.toFixed(2)}</p>
-      <button onclick="addToCart('${product.nome}', ${product.preco})">Adicionar</button>
-    `;
-    productList.appendChild(productDiv);
-  });
+    const productList = document.getElementById("product-list");
+    productList.innerHTML = "";
+    produtos[sectionId].forEach(product => {
+        const productDiv = document.createElement("div");
+        productDiv.classList.add("product");
+        productDiv.innerHTML = `
+            <img src="${product.img}" alt="${product.nome}">
+            <h3>${product.nome}</h3>
+            <p>${product.quantidade}</p>
+            <p>R$ ${product.preco.toFixed(2)}</p>
+            <button onclick="addToCart('${product.nome}', ${product.preco})">Adicionar</button>
+        `;
+        productList.appendChild(productDiv);
+    });
 }
 
 function addToCart(nome, preco) {
-  const produtoCarrinho = carrinho.find(item => item.nome === nome);
-  if (produtoCarrinho) {
-    produtoCarrinho.quantidade += 1;
-  } else {
-    carrinho.push({ nome, preco, quantidade: 1 });
-  }
-  updateCart();
+    const produtoCarrinho = carrinho.find(item => item.nome === nome);
+    if (produtoCarrinho) {
+        produtoCarrinho.quantidade += 1;
+    } else {
+        carrinho.push({ nome, preco, quantidade: 1 });
+    }
+    updateCart();
 }
 
 function updateCart() {
-  const cartItems = document.getElementById("cart-items");
-  cartItems.innerHTML = "";
-  let totalPreco = 0;
-  carrinho.forEach(item => {
-    const cartItemDiv = document.createElement("div");
-    cartItemDiv.classList.add("cart-item");
-    cartItemDiv.innerHTML = `
-      <span>${item.nome} (x${item.quantidade})</span>
-      <strong>R$ ${(item.preco * item.quantidade).toFixed(2)}</strong>
-      <button onclick="removeFromCart('${item.nome}')">Remover</button>
-    `;
-    cartItems.appendChild(cartItemDiv);
-    totalPreco += item.preco * item.quantidade;
-  });
-  document.getElementById("total").textContent = totalPreco.toFixed(2);
-  document.getElementById("checkout").disabled = carrinho.length === 0;
-  document.getElementById("pagamento").style.display = carrinho.length > 0 ? "block" : "none";
+    const cartItems = document.getElementById("cart-items");
+    cartItems.innerHTML = "";
+    let totalPreco = 0;
+    carrinho.forEach(item => {
+        const cartItemDiv = document.createElement("div");
+        cartItemDiv.classList.add("cart-item");
+        cartItemDiv.innerHTML = `
+            <span>${item.nome} (x${item.quantidade})</span>
+            <button onclick="alterarQuantidade('${item.nome}', -1)">-</button>
+            <button onclick="alterarQuantidade('${item.nome}', 1)">+</button>
+            <strong>R$ ${(item.preco * item.quantidade).toFixed(2)}</strong>
+            <button onclick="removeFromCart('${item.nome}')">Remover</button>
+        `;
+        cartItems.appendChild(cartItemDiv);
+        totalPreco += item.preco * item.quantidade;
+    });
+    document.getElementById("total").textContent = totalPreco.toFixed(2);
+    document.getElementById("checkout").disabled = carrinho.length === 0;
+    document.getElementById("pagamento").style.display = carrinho.length > 0 ? "block" : "none";
+}
+
+function alterarQuantidade(nome, quantidade) {
+    const produtoCarrinho = carrinho.find(item => item.nome === nome);
+    if (produtoCarrinho) {
+        produtoCarrinho.quantidade += quantidade;
+        if (produtoCarrinho.quantidade <= 0) {
+            removeFromCart(nome);
+        } else {
+            updateCart();
+        }
+    }
 }
 
 function removeFromCart(nome) {
-  carrinho = carrinho.filter(item => item.nome !== nome);
-  updateCart();
+    carrinho = carrinho.filter(item => item.nome !== nome);
+    updateCart();
 }
 
-document.getElementById("checkout").addEventListener("click", () => {
-  if (carrinho.length > 0) {
-    alert("Carrinho finalizado! Agora prossiga para o pagamento.");
-  }
-});
-
-document.getElementById("pagamento").addEventListener("click", () => {
-  document.getElementById("modalPagamento").style.display = "flex";
-});
+function abrirPagamento() {
+    document.getElementById("modalPagamento").style.display = "flex";
+}
 
 function realizarPagamento() {
-  alert("Pagamento realizado com sucesso!");
-  carrinho = [];
-  updateCart();
-  fecharModal();
+    alert("Pagamento realizado com sucesso!");
+    carrinho = [];
+    updateCart();
+    fecharModal();
 }
 
 function fecharModal() {
-  document.getElementById("modalPagamento").style.display = "none";
+    document.getElementById("modalPagamento").style.display = "none";
 }
 
+document.getElementById("pagamento").addEventListener("click", abrirPagamento);
+
 document.addEventListener("DOMContentLoaded", () => {
-  showSection("bebidas");
+    showSection("bebidas");
 });
 // Adicionar funcionalidade de busca com sugestões
 const searchInput = document.getElementById("search");
