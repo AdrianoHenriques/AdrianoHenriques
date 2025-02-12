@@ -67,7 +67,6 @@ const produtos = {
       { nome: "Abobrinha 1kg", preco: 4.99, img: "https://ceagesp.gov.br/wp-content/uploads/2016/10/portalbobrinhabrasileira-600x469.jpg", quantidade: "1kg" },
       { nome: "Berinjela 1kg", preco: 5.99, img: "https://cdn.awsli.com.br/600x700/305/305913/produto/118031394/ba6a3b28f5.jpg", quantidade: "1kg" },
       { nome: "Pimentão 1kg", preco: 7.49, img: "https://www.infoescola.com/wp-content/uploads/2010/08/piment%C3%A3o_270503105.jpg", quantidade: "1kg" },
-      { nome: "Batata 1kg", preco: 9.99, img: "https://ceagesp.gov.br/wp-content/uploads/2016/10/batataportal-600x469.jpg", quantidade: "5kg" }
     ],
     acougue: [
       { nome: "Bife de Contra Filé 500g", preco: 39.99, img: "https://picsum.photos/seed/ContraFile500/400", quantidade: "500g" },
@@ -85,7 +84,6 @@ const produtos = {
       { nome: "Alcatra 1kg", preco: 34.99, img: "https://picsum.photos/seed/Alcatra1kg/400", quantidade: "1kg" },
       { nome: "Cupim 1kg", preco: 32.99, img: "https://picsum.photos/seed/Cupim1kg/400", quantidade: "1kg" },
       { nome: "Patinho 500g", preco: 27.99, img: "https://picsum.photos/seed/Patinho500/400", quantidade: "500g" },
-      { nome: "Maminha 1kg", preco: 36.99, img: "https://picsum.photos/seed/Maminha1kg/400", quantidade: "1kg" }
     ],
     congelados: [
       { nome: "Pizza Congelada", preco: 14.99, img: "https://picsum.photos/seed/PizzaCongelada/400", quantidade: "unidade" },
@@ -103,7 +101,6 @@ const produtos = {
       { nome: "Mini Pastéis Congelados 500g", preco: 13.99, img: "https://picsum.photos/seed/MiniPasteisCongelados/400", quantidade: "500g" },
       { nome: "Quibe Congelado 500g", preco: 12.99, img: "https://picsum.photos/seed/QuibeCongelado/400", quantidade: "500g" },
       { nome: "Pão de Queijo Congelado 500g", preco: 14.99, img: "https://picsum.photos/seed/PaodeQueijoCongelado/400", quantidade: "500g" },
-      { nome: "Crepioca Congelada 500g", preco: 16.99, img: "https://picsum.photos/seed/CrepiocaCongelada/400", quantidade: "500g" }
     ],
     padaria: [
       { nome: "Pão Francês", preco: 0.50, img: "https://picsum.photos/seed/Paofrances/400", quantidade: "unidade" },
@@ -121,7 +118,7 @@ const produtos = {
       { nome: "Pão de Milho 500g", preco: 7.99, img: "https://picsum.photos/seed/Paodemilho/400", quantidade: "500g" },
       { nome: "Cupcake", preco: 2.99, img: "https://picsum.photos/seed/Cupcake/400", quantidade: "unidade" },
       { nome: "Focaccia 500g", preco: 8.99, img: "https://picsum.photos/seed/Focaccia/400", quantidade: "500g" },
-      { nome: "Pão Sírio 300g", preco: 4.99, img: "https://picsum.photos/seed/Paosirio/400", quantidade: "300g" }
+
     ],
     limpeza: [
       { nome: "Detergente Líquido 500ml", preco: 3.99, img: "https://picsum.photos/seed/DetergenteLiquido/400", quantidade: "500ml" },
@@ -139,7 +136,6 @@ const produtos = {
       { nome: "Limpa Móveis 500ml", preco: 5.99, img: "https://picsum.photos/seed/Limpamoveis/400", quantidade: "500ml" },
       { nome: "Desinfetante Multiuso 1L", preco: 6.99, img: "https://picsum.photos/seed/DesinfetanteMultiuso/400", quantidade: "1L" },
       { nome: "Sabão Líquido para Roupas 1L", preco: 6.99, img: "https://picsum.photos/seed/SabaoLiquidoRoupas/400", quantidade: "1L" },
-      { nome: "Limpa Ar 500ml", preco: 4.99, img: "https://picsum.photos/seed/Limpaar/400", quantidade: "500ml" }
     ]
   };
   
