@@ -1,3 +1,4 @@
+
 const produtos = {
   bebidas: [
     { nome: "Coca-Cola 2L", preco: 12.99, img: "https://static.clubeextra.com.br/img/uploads/1/1/25295001.png", quantidade: "2L" },
@@ -17,22 +18,26 @@ const produtos = {
     { nome: "ÁGUA CRYSTAL 500Ml", preco: 3.00, img: "https://images.tcdn.com.br/img/img_prod/858764/agua_crystal_500ml_gas_c_12_127_1_a126e0b536ba991756801f870daaff60.jpg", quantidade: "500ml" }
   ],
   matinais: [
-    { nome: "Leite Integral 1L", preco: 6.50, img: "https://picsum.photos/seed/LeiteIntegral/400", quantidade: "1L" },
-    { nome: "Cereal Matinal 300g", preco: 8.20, img: "https://picsum.photos/seed/CerealMatinal/400", quantidade: "300g" },
-    { nome: "Pão de Forma 500g", preco: 10.30, img: "https://picsum.photos/seed/PaodeForma/400", quantidade: "500g" },
-    { nome: "Manteiga 200g", preco: 10.99, img: "https://picsum.photos/seed/Manteiga200/400", quantidade: "200g" },
-    { nome: "Geleia de Morango 300g", preco: 14.99, img: "https://picsum.photos/seed/GeleiaMorango/400", quantidade: "300g" },
-    { nome: "Queijo Minas 500g", preco: 20.50, img: "https://picsum.photos/seed/QueijoMinas/400", quantidade: "500g" },
-    { nome: "Presunto 200g", preco: 17.99, img: "https://picsum.photos/seed/Presunto200/400", quantidade: "200g" },
-    { nome: "Ovos - 12 unidades", preco: 18.00, img: "https://picsum.photos/seed/Ovos12/400", quantidade: "12 unidades" },
-    { nome: "Margarina 500g", preco: 7.50, img: "https://picsum.photos/seed/Margarina500/400", quantidade: "500g" },
-    { nome: "Achocolatado 400g", preco: 10.90, img: "https://picsum.photos/seed/Achocolatado400/400", quantidade: "400g" },
-    { nome: "Biscoito Recheado 400g", preco: 9.50, img: "https://picsum.photos/seed/BiscoitoRecheado/400", quantidade: "400g" },
-    { nome: "Creme de Leite 200g", preco: 4.50, img: "https://picsum.photos/seed/CremeLeite200/400", quantidade: "200g" },
-    { nome: "Farinha de Trigo 1kg", preco: 6.20, img: "https://picsum.photos/seed/FarinhaTrigo/400", quantidade: "1kg" },
-    { nome: "Requeijão 200g", preco: 7.80, img: "https://picsum.photos/seed/Requeijao200/400", quantidade: "200g" },
-    { nome: "Biscoito de Polvilho 500g", preco: 8.99, img: "https://picsum.photos/seed/BiscoitoPolvilho/400", quantidade: "500g" },
-    { nome: "Iogurte Natural 170g", preco: 3.50, img: "https://picsum.photos/seed/IogurteNatural/400", quantidade: "170g" }
+    { nome: "Leite Integral UHT Ninho 1L", preco: 6.50, img: "https://a-static.mlcdn.com.br/186x140/leite-integral-uht-ninho-1l/vandocesesalgados/80bd32041e7511ec836a4201ac185013/434c6c12b51bb9e8a21e849b3960e57b.jpeg", quantidade: "1L" },
+    { nome: "Cereal Matinal Ultra Flakes QUALITÁ Caixa 300g
+", preco: 8.20, img: "https://static.clubeextra.com.br/img/uploads/1/752/33142752.png", quantidade: "300g" },
+    { nome: "Pão de Forma Panco Premium Pacote 500g
+", preco: 10.30, img: "https://static.paodeacucar.com/img/uploads/1/354/607354.png", quantidade: "500g" },
+    { nome: "Manteiga Itambé Extra com Sal 200g
+", preco: 10.99, img: "https://superprix.vteximg.com.br/arquivos/ids/173188-600-600/Manteiga-Itambe-Extra-com-Sal-200g.png?v=636136139850600000", quantidade: "200g" },
+    { nome: "Geleia De Morango Artesanal Myberries 300g", preco: 14.99, img: "https://casaflora.vtexassets.com/arquivos/ids/157749-1200-auto?v=637624122224670000&width=1200&height=auto&aspect=true", quantidade: "300g" },
+    { nome: "Queijo Minas Frescal 500g", preco: 20.50, img: "https://www.laticiniosportoalegre.com.br/.imaging/flex/crop/974x974/dam/International-Subsidiaries/LPA/Organiza--o/31761-MOCKUP--NOVA-LEGISLACAO---QUEIJO-MINAS-FRESCAL-500G_AF01.png", quantidade: "500g" },
+    { nome: "Presunto Cozido sem capa de gordura", preco: 17.99, img: "hhttps://www.sadia.com.br/assets/images/_/products/994f128011a5e08d3d7429aa7c61bac2304ee358.webp", quantidade: "200g" },
+    { nome: "Ovos Branco Extra QUALITÁ Bandeja 12 Unidades", preco: 18.00, img: "https://static.paodeacucar.com/img/uploads/1/462/616462.png", quantidade: "12 unidades" },
+    { nome: `"qualy 1k", preco: 7.50, img: "https://www.qualy.com.br/images/produtos/cremosa/margarina-1kg.webp", quantidade: "500g" },
+    { nome: "Achocolatado Nescau 400 Gramas - Nestle", preco: 10.90, img: "https://a-static.mlcdn.com.br/800x560/achocolatado-nescau-400-gramas-nestle/oliststore/mglber125dermlfu/edb1be8d98e05a2513f374d3d7b69617.jpeg", quantidade: "400g" },
+    { nome: "Biscoito De Leite Condensado Recheado Com Goiabada 400G - Santa Maria Alimentos", preco: 9.50, img: "https://a-static.mlcdn.com.br/800x560/biscoito-de-leite-condensado-recheado-com-goiabada-400g-santa-maria-alimentos/oliststore/mglm3z4c0rhhdr62/52d2c92fd3e6c21ccfbed979b1e4c9ea.jpeg", quantidade: "400g" },
+    { nome: "Creme de Leite Piracanjuba 200g", preco: 4.50, img: "https://piracanjuba-institucional-prd.s3.sa-east-1.amazonaws.com/product_images/image/piracanjuba-cremedeleite-tradicional-200g-848x1007px-frontal-562.webp", quantidade: "200g" },
+    { nome: "Farinha De Trigo Dona Benta 1kg", preco: 6.20, img: "https://a-static.mlcdn.com.br/800x560/farinha-de-trigo-dona-benta-1kg/casasantaluzia2/4541/9525cf41d185e4b90b8f156f9d8ea4b2.jpeg", quantidade: "1kg" },
+    { nome: "Imagem para seleção
+Requeijão Cremoso Tradicional VIGOR Copo 200g", preco: 7.80, img: "https://static.clubeextra.com.br/img/uploads/1/919/24675919.jpg", quantidade: "200g" },
+    { nome: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTXcXzy5DneoidxjUs3LPOMlPLty9pOVjE0Y31N-FW9xpBs_1sWW3k77EFp4mxGqU8ErhwjV61MB143jfdqwxBE2BWwTBhrcFm12eHmw-8BCDVbaNk6oFuCHA&usqp=CAE", preco: 8.99, img: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTXcXzy5DneoidxjUs3LPOMlPLty9pOVjE0Y31N-FW9xpBs_1sWW3k77EFp4mxGqU8ErhwjV61MB143jfdqwxBE2BWwTBhrcFm12eHmw-8BCDVbaNk6oFuCHA&usqp=CAE", quantidade: "500g" },
+    { nome: "Iogurte Integral Natural Nestlé Copo 170g", preco: 3.50, img: "https://static.paodeacucar.com/img/uploads/1/912/668912.jpg", quantidade: "170g" }
   ],
   mercearia: [
     { nome: "Arroz 5kg", preco: 19.99, img: "https://picsum.photos/seed/Arroz5kg/400", quantidade: "5kg" },
@@ -144,94 +149,83 @@ const produtos = {
   ]
 };
 
-// script.js atualizado
 let carrinho = [];
 
 function showSection(sectionId) {
-    const productList = document.getElementById("product-list");
-    productList.innerHTML = "";
-    produtos[sectionId].forEach(product => {
-        const productDiv = document.createElement("div");
-        productDiv.classList.add("product");
-        productDiv.innerHTML = `
-            <img src="${product.img}" alt="${product.nome}">
-            <h3>${product.nome}</h3>
-            <p>${product.quantidade}</p>
-            <p>R$ ${product.preco.toFixed(2)}</p>
-            <button onclick="addToCart('${product.nome}', ${product.preco})">Adicionar</button>
-        `;
-        productList.appendChild(productDiv);
-    });
+  const productList = document.getElementById("product-list");
+  productList.innerHTML = "";
+  produtos[sectionId].forEach(product => {
+    const productDiv = document.createElement("div");
+    productDiv.classList.add("product");
+    productDiv.innerHTML = `
+      <img src="${product.img}" alt="${product.nome}">
+      <h3>${product.nome}</h3>
+      <p>${product.quantidade}</p>
+      <p>R$ ${product.preco.toFixed(2)}</p>
+      <button onclick="addToCart('${product.nome}', ${product.preco})">Adicionar</button>
+    `;
+    productList.appendChild(productDiv);
+  });
 }
 
 function addToCart(nome, preco) {
-    const produtoCarrinho = carrinho.find(item => item.nome === nome);
-    if (produtoCarrinho) {
-        produtoCarrinho.quantidade += 1;
-    } else {
-        carrinho.push({ nome, preco, quantidade: 1 });
-    }
-    updateCart();
+  const produtoCarrinho = carrinho.find(item => item.nome === nome);
+  if (produtoCarrinho) {
+    produtoCarrinho.quantidade += 1;
+  } else {
+    carrinho.push({ nome, preco, quantidade: 1 });
+  }
+  updateCart();
 }
 
 function updateCart() {
-    const cartItems = document.getElementById("cart-items");
-    cartItems.innerHTML = "";
-    let totalPreco = 0;
-    carrinho.forEach(item => {
-        const cartItemDiv = document.createElement("div");
-        cartItemDiv.classList.add("cart-item");
-        cartItemDiv.innerHTML = `
-            <span>${item.nome} (x${item.quantidade})</span>
-            <button onclick="alterarQuantidade('${item.nome}', -1)">-</button>
-            <button onclick="alterarQuantidade('${item.nome}', 1)">+</button>
-            <strong>R$ ${(item.preco * item.quantidade).toFixed(2)}</strong>
-            <button onclick="removeFromCart('${item.nome}')">Remover</button>
-        `;
-        cartItems.appendChild(cartItemDiv);
-        totalPreco += item.preco * item.quantidade;
-    });
-    document.getElementById("total").textContent = totalPreco.toFixed(2);
-    document.getElementById("checkout").disabled = carrinho.length === 0;
-    document.getElementById("pagamento").style.display = carrinho.length > 0 ? "block" : "none";
-}
-
-function alterarQuantidade(nome, quantidade) {
-    const produtoCarrinho = carrinho.find(item => item.nome === nome);
-    if (produtoCarrinho) {
-        produtoCarrinho.quantidade += quantidade;
-        if (produtoCarrinho.quantidade <= 0) {
-            removeFromCart(nome);
-        } else {
-            updateCart();
-        }
-    }
+  const cartItems = document.getElementById("cart-items");
+  cartItems.innerHTML = "";
+  let totalPreco = 0;
+  carrinho.forEach(item => {
+    const cartItemDiv = document.createElement("div");
+    cartItemDiv.classList.add("cart-item");
+    cartItemDiv.innerHTML = `
+      <span>${item.nome} (x${item.quantidade})</span>
+      <strong>R$ ${(item.preco * item.quantidade).toFixed(2)}</strong>
+      <button onclick="removeFromCart('${item.nome}')">Remover</button>
+    `;
+    cartItems.appendChild(cartItemDiv);
+    totalPreco += item.preco * item.quantidade;
+  });
+  document.getElementById("total").textContent = totalPreco.toFixed(2);
+  document.getElementById("checkout").disabled = carrinho.length === 0;
+  document.getElementById("pagamento").style.display = carrinho.length > 0 ? "block" : "none";
 }
 
 function removeFromCart(nome) {
-    carrinho = carrinho.filter(item => item.nome !== nome);
-    updateCart();
+  carrinho = carrinho.filter(item => item.nome !== nome);
+  updateCart();
 }
 
-function abrirPagamento() {
-    document.getElementById("modalPagamento").style.display = "flex";
-}
+document.getElementById("checkout").addEventListener("click", () => {
+  if (carrinho.length > 0) {
+    alert("Carrinho finalizado! Agora prossiga para o pagamento.");
+  }
+});
+
+document.getElementById("pagamento").addEventListener("click", () => {
+  document.getElementById("modalPagamento").style.display = "flex";
+});
 
 function realizarPagamento() {
-    alert("Pagamento realizado com sucesso!");
-    carrinho = [];
-    updateCart();
-    fecharModal();
+  alert("Pagamento realizado com sucesso!");
+  carrinho = [];
+  updateCart();
+  fecharModal();
 }
 
 function fecharModal() {
-    document.getElementById("modalPagamento").style.display = "none";
+  document.getElementById("modalPagamento").style.display = "none";
 }
 
-document.getElementById("pagamento").addEventListener("click", abrirPagamento);
-
 document.addEventListener("DOMContentLoaded", () => {
-    showSection("bebidas");
+  showSection("bebidas");
 });
 // Adicionar funcionalidade de busca com sugestões
 const searchInput = document.getElementById("search");
