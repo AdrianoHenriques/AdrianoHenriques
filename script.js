@@ -189,7 +189,6 @@ function updateCart() {
 }
 
 
-
 function changeQuantity(nome, amount) {
   const produtoCarrinho = carrinho.find(item => item.nome === nome);
   if (produtoCarrinho) {
@@ -198,8 +197,12 @@ function changeQuantity(nome, amount) {
           carrinho = carrinho.filter(item => item.nome !== nome);
       }
   }
+  updateCart(); // Agora a atualização do carrinho ocorre corretamente
 }
-
+document.addEventListener("DOMContentLoaded", () => {
+  showSection("bebidas");
+  updateCart(); // Garante que o carrinho seja atualizado ao carregar a página
+});
 
 document.getElementById("pagamento").addEventListener("click", () => {
   document.getElementById("modalPagamento").style.display = "flex";
