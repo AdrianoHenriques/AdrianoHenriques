@@ -120,7 +120,7 @@ const produtos = {
 
   ],
   limpeza: [
-    { nome: "Detergente Líquido ypé 500ml", preco: 3.99, img: "https://t10917.vteximg.com.br/arquivos/ids/169669/DETERG--LIQ-500ML-YPE-NEUTRO_IMG1.jpg?v=638743772169300000", quantidade: "500ml" },
+    { nome: "Detergente Líquido ypé 500ml", preco: 3.99, img: "https://dcdn-us.mitiendanube.com/stores/001/229/368/products/detergente-ype-500ml-neutro1-656d37a7d5de72858c15931045196373-1024-1024.webp", quantidade: "500ml" },
     { nome: "Desinfetante ypé 1L", preco: 5.99, img: "https://t10917.vteximg.com.br/arquivos/ids/168976-1000-1000/DESINF---1-LT-YPE-BAK-LAVANDA_IMG1.jpg?v=638742974769500000", quantidade: "1L" },
     { nome: "Sabão em Pó brilhante 1kg", preco: 8.99, img: "https://cdn.awsli.com.br/446/446822/produto/19402172/shopping--98--q9tufd07hv.jpg", quantidade: "1kg" },
     { nome: "Multiuso 500ml", preco: 4.99, img: "https://www.papelplasticoecia.com.br/product_images/s/063/fotos-com-fundos-removidos-26571-30073_std.png", quantidade: "500ml" },
