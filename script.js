@@ -93,7 +93,7 @@ const produtos = {
     { nome: "Batata Frita Congelada 1kg", preco: 14.99, img: "https://giassi.vtexassets.com/arquivos/ids/2746885/Batata-Pre-Frita-Crinkle-Congelada-Bem-Brasil-Pacote-105kg.png?v=638627362995630000", quantidade: "1kg" },
     { nome: "Peixe Congelado 1kg", preco: 24.99, img: "https://avenidab2c.vtexassets.com/arquivos/ids/349503/Peixe-Sardinha-Eviscerada-Congelada-Bom-Peixe-500g.jpg?v=638624740140830000", quantidade: "1kg" },
     { nome: "Empanadas Congeladas 1kg", preco: 17.99, img: "https://tfchgi.vteximg.com.br/arquivos/ids/177338-1000-1000/49131.jpg?v=638491544801970000", quantidade: "500g" },
-    { nome: "Arroz Parboilizado Congelado 1kg", preco: 11.99, img: "https://www.camil.com.br/wp-content/uploads/sites/12/2020/06/parbo-novo-768x768.jpg", quantidade: "1kg" },
+    { nome: "Batata Pré-Frita Tradicional Congelada McCain Pacote 1,5kg Tamanho Família", preco: 11.99, img: "https://static.clubeextra.com.br/img/uploads/1/619/24649619.png", quantidade: "1kg" },
     { nome: "Lasanha Congelada 1kg", preco: 19.99, img: "https://www.sondadelivery.com.br/Arquivos/ProdutosSku/1551060/7891515475680.png", quantidade: "1kg" },
     { nome: "Nuggets de Frango 500g", preco: 15.99, img: "https://www.davo.com.br/ccstore/v1/images/?source=/file/v7329600522438852565/products/prod_7894904284726.imagem1.jpg&height=940&width=940", quantidade: "500g" },
     { nome: "Legumes  Congelados 1kg", preco: 10.99, img: "https://phygital-files.mercafacil.com/catalogo/uploads/produto/ervilha_congelada_de_marchi_pacote_300g_29b142a8-8d61-4599-b212-0135fec64050.png", quantidade: "1kg" },
@@ -102,7 +102,7 @@ const produtos = {
     { nome: "Pão de Queijo Congelado 1kg", preco: 14.99, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNadQakGYa5nBX0-1YBkIL23RitSOgICLcZg&s", quantidade: "500g" },
   ],
   padaria: [
-    { nome: "Pão Francês", preco: 0.50, img: "https://www.sabornamesa.com.br/media/k2/items/cache/f59fd3a46f2adbbd9dd6269010353971_XL.jpg", quantidade: "unidade" },
+    { nome: "Pão Francês", preco: 15.50, img: "https://www.sabornamesa.com.br/media/k2/items/cache/f59fd3a46f2adbbd9dd6269010353971_XL.jpg", quantidade: "1kg" },
     { nome: "Croissant", preco: 3.99, img: "https://catracalivre.com.br/wp-content/uploads/2023/12/istock-1190095752-1.jpg", quantidade: "unidade" },
     { nome: "Bolo de Fubá 1kg", preco: 14.99, img: "https://img.cybercook.com.br/receitas/677/bolo-de-fuba-22.jpeg", quantidade: "1kg" },
     { nome: "Muffin", preco: 2.99, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTyskqV3qDoMgjhdBgGyWxBc2MYvRYRTfflw&s", quantidade: "unidade" },
